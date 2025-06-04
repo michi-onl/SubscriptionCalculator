@@ -36,10 +36,7 @@ export function P({ children }: { children?: React.ReactNode }) {
 
 export function Blockquote({ children }: { children?: React.ReactNode }) {
   return (
-    <blockquote className="mt-6 border-l-2 pl-6 italic">
-      &quot;After all,&quot; he said, &quot;everyone enjoys a good joke, so
-      it&apos;s only fair that they should pay for the privilege.&quot;
-    </blockquote>
+    <blockquote className="mt-6 border-l-2 pl-6 italic">{children}</blockquote>
   );
 }
 
