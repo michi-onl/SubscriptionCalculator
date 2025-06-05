@@ -1,3 +1,22 @@
+export function A({
+  children,
+  url,
+}: {
+  children?: React.ReactNode;
+  url: string;
+}) {
+  return (
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-600 underline"
+    >
+      {children}
+    </a>
+  );
+}
+
 export function H1({ children }: { children?: React.ReactNode }) {
   return (
     <h1 className="scroll-m-20 text-4xl tracking-tight text-balance">
