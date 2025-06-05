@@ -16,6 +16,7 @@ import {
 import SubscriptionCalculator from "@/components/calculator";
 
 import {
+  A,
   H1,
   H3,
   H4,
@@ -36,8 +37,11 @@ export default function FMHY() {
           </CardTitle>
           <CardDescription>
             Track your monthly subscription expenses with this free calculator.
-            Research shows most people underestimate their subscription costs by
-            79%.
+            Most people underestimate monthly subscription costs{" "}
+            <A url="https://www.cnbc.com/2022/09/06/consumers-underestimate-monthly-subscription-costs-by-at-least-100.html">
+              by at least $100
+            </A>
+            .
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-6">
@@ -64,7 +68,7 @@ export default function FMHY() {
           </div>
 
           <Accordion type="multiple">
-            <AccordionItem value="section-1">
+            <AccordionItem value="understand">
               <AccordionTrigger>
                 <H3>Understanding Subscription Costs</H3>
               </AccordionTrigger>
@@ -77,12 +81,15 @@ export default function FMHY() {
                 </P>
                 <Blockquote>
                   Research indicates the average household spends over $273
-                  monthly on subscriptions, totaling $3,276 annually.
+                  monthly on subscriptions, totaling $3,276 annually.{" "}
+                  <A url="https://www.reviews.org/internet-service/cost-of-internet-streaming-and-cell-phone-bills/">
+                    Source
+                  </A>
                 </Blockquote>
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="section-2">
+            <AccordionItem value="manage">
               <AccordionTrigger>
                 <H3>Managing Your Subscription Expenses</H3>
               </AccordionTrigger>
@@ -116,7 +123,7 @@ export default function FMHY() {
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="section-3">
+            <AccordionItem value="use">
               <AccordionTrigger>
                 <H3>How to Use This Calculator</H3>
               </AccordionTrigger>
@@ -148,55 +155,26 @@ export default function FMHY() {
               </AccordionContent>
             </AccordionItem>
 
-            {/*<AccordionItem value="section-4">
+            {/*<AccordionItem value="services">
               <AccordionTrigger>
                 <H3>Supported Services</H3>
               </AccordionTrigger>
               <AccordionContent>
-                <div className="space-y-8">
-                  <div>
-                    <H4>Streaming Services:</H4>
-                    <P>
-                      Netflix, Amazon Prime Video, Disney+, Hulu, HBO Max, Apple
-                      TV+, Paramount+, YouTube Premium
-                    </P>
-                  </div>
-
-                  <div>
-                    <H4>Music & Audio:</H4>
-                    <P>
-                      Spotify, Apple Music, Amazon Music, Pandora, Audible,
-                      SiriusXM
-                    </P>
-                  </div>
-
-                  <div>
-                    <H4>Software & Productivity:</H4>
-                    <P>
-                      Microsoft 365, Adobe Creative Suite, Dropbox, Canva Pro,
-                      Grammarly, LastPass
-                    </P>
-                  </div>
-                </div>
+                <ServicesTxt />
               </AccordionContent>
             </AccordionItem>*/}
 
-            <AccordionItem value="section-5">
+            <AccordionItem value="alternatives">
               <AccordionTrigger>
-                <H3>Free Alternatives</H3>
+                <H3>How To Find Free Alternatives</H3>
               </AccordionTrigger>
               <AccordionContent>
                 <P>
                   Consider exploring free alternatives to paid subscriptions.
                   The{" "}
-                  <a
-                    href="https://fmhy.net/beginners-guide"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 underline"
-                  >
+                  <A url="https://fmhy.net/beginners-guide">
                     FMHY Beginners Guide
-                  </a>{" "}
+                  </A>{" "}
                   by freemediaheckyeah provides a comprehensive collection of
                   free services and resources across various categories,
                   including streaming, music, software, and productivity tools.
@@ -204,7 +182,7 @@ export default function FMHY() {
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="section-7">
+            <AccordionItem value="faq">
               <AccordionTrigger>
                 <H3>Frequently Asked Questions</H3>
               </AccordionTrigger>
@@ -248,7 +226,7 @@ export default function FMHY() {
         </CardContent>
 
         <CardFooter className="flex-col space-y-4">
-          <div className="text-center">
+          <div className="text-center lg:hidden">
             <H3>Calculate Your Subscription Costs</H3>
             <P>
               Get a clear overview of your monthly subscription expenses and
