@@ -4,6 +4,10 @@ import {
   Volume2,
   Laptop,
   LucideIcon,
+  ShoppingCart,
+  Newspaper,
+  Camera,
+  Gamepad2,
 } from "lucide-react";
 
 export type Currency = "USD" | "EUR";
@@ -119,6 +123,15 @@ export const subscriptionData: SubscriptionData = {
         },
         plan: "Individual",
       },
+      peacock: {
+        name: "Peacock",
+        monthly_cost: {
+          USD: 5.99,
+          EUR: 0.0,
+        },
+        plan: "Premium",
+        note: "Not available in EU",
+      },
     },
     music_and_audio: {
       spotify: {
@@ -171,6 +184,22 @@ export const subscriptionData: SubscriptionData = {
         plan: "All Access",
         note: "Not available in EU",
       },
+      youtube_music: {
+        name: "YouTube Music",
+        monthly_cost: {
+          USD: 10.99,
+          EUR: 9.99,
+        },
+        plan: "Premium",
+      },
+      tidal: {
+        name: "Tidal",
+        monthly_cost: {
+          USD: 10.99,
+          EUR: 9.99,
+        },
+        plan: "HiFi",
+      },
     },
     software_and_apps: {
       microsoft_365: {
@@ -188,14 +217,6 @@ export const subscriptionData: SubscriptionData = {
           EUR: 59.99,
         },
         plan: "All Apps",
-      },
-      dropbox: {
-        name: "Dropbox",
-        monthly_cost: {
-          USD: 9.99,
-          EUR: 9.99,
-        },
-        plan: "Plus",
       },
       canva_pro: {
         name: "Canva Pro",
@@ -220,6 +241,209 @@ export const subscriptionData: SubscriptionData = {
           EUR: 3.0,
         },
         plan: "Premium",
+      },
+      notion: {
+        name: "Notion",
+        monthly_cost: {
+          USD: 8.0,
+          EUR: 8.0,
+        },
+        plan: "Personal Pro",
+      },
+      zoom: {
+        name: "Zoom",
+        monthly_cost: {
+          USD: 14.99,
+          EUR: 13.99,
+        },
+        plan: "Pro",
+      },
+      one_password: {
+        name: "1Password",
+        monthly_cost: {
+          USD: 2.99,
+          EUR: 2.99,
+        },
+        plan: "Individual",
+      },
+      bitwarden: {
+        name: "Bitwarden",
+        monthly_cost: {
+          USD: 0.80,
+          EUR: 0.70,
+        },
+        plan: "Premium",
+      },
+    },
+    shopping_and_delivery: {
+      amazon_prime: {
+        name: "Amazon Prime",
+        monthly_cost: {
+          USD: 14.98,
+          EUR: 8.99,
+        },
+        plan: "Monthly",
+      },
+      walmart_plus: {
+        name: "Walmart+",
+        monthly_cost: {
+          USD: 12.95,
+          EUR: 0.0,
+        },
+        plan: "Monthly",
+        note: "Not available in EU",
+      },
+      instacart_plus: {
+        name: "Instacart+",
+        monthly_cost: {
+          USD: 9.99,
+          EUR: 0.0,
+        },
+        plan: "Monthly",
+        note: "Not available in EU",
+      },
+      dashpass: {
+        name: "DashPass",
+        monthly_cost: {
+          USD: 9.99,
+          EUR: 0.0,
+        },
+        plan: "Monthly",
+        note: "Not available in EU",
+      },
+      uber_one: {
+        name: "Uber One",
+        monthly_cost: {
+          USD: 9.99,
+          EUR: 5.99,
+        },
+        plan: "Monthly",
+      },
+    },
+    news_and_media: {
+      nyt: {
+        name: "New York Times",
+        monthly_cost: {
+          USD: 17.0,
+          EUR: 17.0,
+        },
+        plan: "Digital",
+      },
+      washington_post: {
+        name: "Washington Post",
+        monthly_cost: {
+          USD: 10.0,
+          EUR: 10.0,
+        },
+        plan: "Digital",
+      },
+      wall_street_journal: {
+        name: "Wall Street Journal",
+        monthly_cost: {
+          USD: 38.99,
+          EUR: 38.99,
+        },
+        plan: "Digital",
+      },
+      medium: {
+        name: "Medium",
+        monthly_cost: {
+          USD: 5.0,
+          EUR: 5.0,
+        },
+        plan: "Membership",
+      },
+      substack: {
+        name: "Substack Pro",
+        monthly_cost: {
+          USD: 8.0,
+          EUR: 8.0,
+        },
+        plan: "Pro",
+      },
+    },
+    cloud_storage: {
+      dropbox: {
+        name: "Dropbox",
+        monthly_cost: {
+          USD: 9.99,
+          EUR: 9.99,
+        },
+        plan: "Plus",
+      },
+      google_one: {
+        name: "Google One",
+        monthly_cost: {
+          USD: 1.99,
+          EUR: 1.99,
+        },
+        plan: "100GB",
+      },
+      icloud: {
+        name: "iCloud+",
+        monthly_cost: {
+          USD: 0.99,
+          EUR: 0.99,
+        },
+        plan: "50GB",
+      },
+      onedrive: {
+        name: "OneDrive",
+        monthly_cost: {
+          USD: 1.99,
+          EUR: 1.99,
+        },
+        plan: "100GB",
+      },
+      box: {
+        name: "Box",
+        monthly_cost: {
+          USD: 10.0,
+          EUR: 10.0,
+        },
+        plan: "Personal Pro",
+      },
+    },
+    gaming: {
+      xbox_game_pass: {
+        name: "Xbox Game Pass",
+        monthly_cost: {
+          USD: 16.99,
+          EUR: 12.99,
+        },
+        plan: "Ultimate",
+      },
+      playstation_plus: {
+        name: "PlayStation Plus",
+        monthly_cost: {
+          USD: 17.99,
+          EUR: 16.99,
+        },
+        plan: "Premium",
+      },
+      nintendo_switch_online: {
+        name: "Nintendo Switch Online",
+        monthly_cost: {
+          USD: 3.99,
+          EUR: 3.99,
+        },
+        plan: "Individual",
+      },
+      apple_arcade: {
+        name: "Apple Arcade",
+        monthly_cost: {
+          USD: 4.99,
+          EUR: 4.99,
+        },
+        plan: "Monthly",
+      },
+      ea_play: {
+        name: "EA Play",
+        monthly_cost: {
+          USD: 4.99,
+          EUR: 3.99,
+        },
+        plan: "Monthly",
       },
     },
     communication: {
@@ -260,5 +484,9 @@ export const categoryConfig: CategoryConfig = {
   streaming_services: { label: "Streaming", icon: MonitorPlay },
   music_and_audio: { label: "Music & Audio", icon: Volume2 },
   software_and_apps: { label: "Software & Apps", icon: Laptop },
+  shopping_and_delivery: { label: "Shopping & Delivery", icon: ShoppingCart },
+  news_and_media: { label: "News & Media", icon: Newspaper },
+  cloud_storage: { label: "Cloud Storage", icon: Camera },
+  gaming: { label: "Gaming", icon: Gamepad2 },
   communication: { label: "Communication", icon: ChevronsLeftRightEllipsis },
 };
