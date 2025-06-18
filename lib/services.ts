@@ -6,7 +6,7 @@ import {
   LucideIcon,
   ShoppingCart,
   Newspaper,
-  Camera,
+  HardDrive,
   Gamepad2,
 } from "lucide-react";
 
@@ -33,6 +33,10 @@ export interface SubscriptionData {
     streaming_services: ServiceCategory;
     music_and_audio: ServiceCategory;
     software_and_apps: ServiceCategory;
+    shopping_and_delivery: ServiceCategory;
+    news_and_media: ServiceCategory;
+    cloud_storage: ServiceCategory;
+    gaming: ServiceCategory;
     communication: ServiceCategory;
   };
   calculation_settings: {
@@ -486,7 +490,7 @@ export const categoryConfig: CategoryConfig = {
   software_and_apps: { label: "Software & Apps", icon: Laptop },
   shopping_and_delivery: { label: "Shopping & Delivery", icon: ShoppingCart },
   news_and_media: { label: "News & Media", icon: Newspaper },
-  cloud_storage: { label: "Cloud Storage", icon: Camera },
+  cloud_storage: { label: "Cloud Storage", icon: HardDrive },
   gaming: { label: "Gaming", icon: Gamepad2 },
   communication: { label: "Communication", icon: ChevronsLeftRightEllipsis },
 };
